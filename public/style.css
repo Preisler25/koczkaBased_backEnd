@@ -72,6 +72,9 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .koczka_element p {
+    padding: 1vh;
+  }
   .koczka_element:nth-child(1n) {
     background-color: #db9dba;
     -ms-flex-item-align: start;
@@ -130,7 +133,7 @@
             justify-content: center;
   }
   .btn {
-    width: 10vw;
+    width: 12vw;
     height: 5vh;
     background-color: #9dbadb;
     color: white;
@@ -149,6 +152,7 @@
     border-radius: 10px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    text-transform: uppercase;
   }
   .btn:hover {
     background-color: #a29ddb;

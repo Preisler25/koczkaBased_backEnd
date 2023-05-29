@@ -54,6 +54,9 @@
       h2 {
         align-self: center;
       }
+      p{
+        padding: 1vh;
+      }
     }
   
     .koczka_element:nth-child(1n) {
@@ -116,7 +119,7 @@
     }
   
     .btn{
-      width: 10vw;
+      width: 12vw;
       height: 5vh;
       background-color: rgb(157, 186, 219);
       color: white;
@@ -127,6 +130,7 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       transition: 0.3s;
+      text-transform: uppercase;
     }
     .btn:hover{
       background-color: rgb(162, 157, 219);
