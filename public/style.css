@@ -208,6 +208,7 @@
             justify-content: center;
   }
   #popUp_quot {
+    padding-left: 10vw;
     margin-top: 10vh;
     font-size: 2rem;
   }
