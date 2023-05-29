@@ -140,8 +140,15 @@
       height: 70vh;
       border-radius: 5px;
       display: flex;
-      justify-content: center;
+      justify-content: end;
       align-items: center;
+    }
+    .popUp_grid_item{
+      height: 70vh;
+      width: 50vw;
+    }
+    #koczka_kep{
+      margin-left: -35vw;
     }
   }
   
