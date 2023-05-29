@@ -166,19 +166,33 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .popUp_grid_item {
     height: 70vh;
-    width: 50vw;
+    width: 60vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #koczka_kep {
-    margin-left: -35vw;
+    position: fixed;
+    left: 12vw;
+  }
+  #popUp_title {
+    background-color: aquamarine;
+    font-size: 3rem;
+    margin-top: 5vh;
+    width: 60vw;
   }
 }
 
