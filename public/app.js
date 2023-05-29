@@ -41,5 +41,6 @@ let genPopUp = (txt) =>{
       <div id="popUp_quot">"${txt}"</div>
   </div>
 </div>`;
-  e.classList.add('active_pop_up')
+  e.classList.add('active_pop_up');
 }
+

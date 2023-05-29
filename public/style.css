@@ -120,6 +120,39 @@
   #pic_holder:hover img:nth-child(2n) {
     display: block;
   }
+  #click_btn_cont {
+    width: 30vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn {
+    width: 10vw;
+    height: 5vh;
+    background-color: #9dbadb;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background-color: #a29ddb;
+  }
   footer {
     margin-top: 40px;
     display: -webkit-box;

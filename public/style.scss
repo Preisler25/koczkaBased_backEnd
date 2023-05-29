@@ -108,7 +108,30 @@
         display: block;
       }
     }
+
+    #click_btn_cont{
+      width: 30vw;
+      display: flex;
+      justify-content: center;
+    }
   
+    .btn{
+      width: 10vw;
+      height: 5vh;
+      background-color: rgb(157, 186, 219);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .btn:hover{
+      background-color: rgb(162, 157, 219);
+    }
+
     footer {
       margin-top: 40px;
       display: flex;
