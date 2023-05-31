@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
     ::-webkit-scrollbar {
       display: none;
     }
@@ -181,7 +181,219 @@
     #koczka_kep{
       position: fixed;
       left: 12vw;
-      
+    }
+    #popUp_title{
+      background-color: rgb(219, 157, 216);
+      font-size: 3rem;
+      margin-top: 3vh;
+      padding-top: 2vh;
+      width: 60vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+    }
+    #popUp_quot{
+      padding-left: 10vw;
+      margin-top: 10vh;
+      font-size: 2rem;
+    }
+    #x_btn{
+      position: fixed;
+      left: 78.8vw;
+      top: 15.5vh;
+      width: 1vw;
+      height: 1vw;
+    }
+  }
+  
+  @media screen and (min-width: 783px ) and (max-width: 1024px)  {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    :root {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(219, 157, 216);
+      font-family: "Roboto", sans-serif;
+      font-size: 25px;
+    }
+  
+    * {
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+      /* Standard syntax */
+    }
+  
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      background-color: rgb(157, 186, 219);
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    #koczkas {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .koczka_element {
+      display: flex;
+      margin-top: -80px;
+      height: 40vh;
+      width: 30vw;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1vh;
+  
+      h2 {
+        margin-top: 80px;
+        align-self: center;
+      }
+      p{
+        scale: 0.6;
+        padding: 1vh;
+      }
+    }
+  
+    .koczka_element:nth-child(1n) {
+      background-color: rgb(219, 157, 186);
+      align-self: flex-start;
+      margin-left: 10vw;
+    }
+  
+    .koczka_element:nth-child(2n) {
+      background-color: rgb(219, 157, 186);
+      align-self: flex-end;
+      margin-right: 10vw;
+    }
+  
+    .koczka_element:nth-last-child(-n+2) {
+      margin-left: 10vh;
+      margin-right: 30vh;
+    }
+  
+    .koczka_element:nth-child(4) {
+      margin-top: -20vh;
+    }
+  
+  
+    #pic_holder {
+      display: flex;
+      justify-content: center;
+  
+      img {
+        height: 30vh;
+        border-radius: 10px;
+        padding-bottom: 3vh;
+      }
+  
+      img:nth-child(1n) {
+        display: block;
+        width: max-content;
+      }
+  
+      img:nth-child(2n) {
+        display: none;
+        width: 30vw;
+      }
+    }
+  
+    #pic_holder:hover {
+      img:nth-child(1n) {
+        display: none
+      }
+  
+      img:nth-child(2n) {
+        display: block;
+      }
+    }
+
+    #click_btn_cont{
+      width: 30vw;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .btn{
+      width: 12vw;
+      height: 5vh;
+      background-color: rgb(157, 186, 219);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      transition: 0.3s;
+      text-transform: uppercase;
+    }
+    .btn:hover{
+      background-color: rgb(162, 157, 219);
+    }
+
+    footer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      background-color: rgb(157, 186, 219);
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .active_pop_up{
+      position: fixed;
+        left: 0%;
+        top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      background-color: rgba(0, 0, 0, 0.447);
+    }
+    #cont{
+      background-color: rgb(157, 186, 219);
+      width: 60vw;
+      height: 70vh;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+    .popUp_grid_item{
+      height: 70vh;
+      width: 60vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+    }
+    #koczka_kep{
+      position: fixed;
+      left: 12vw;
     }
     #popUp_title{
       background-color: rgb(219, 157, 216);
@@ -212,14 +424,13 @@
   }
   
   
-  
   //telefon ------------------
   
   
   
   
   
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 783px) {
     ::-webkit-scrollbar {
       display: none;
     }
@@ -335,4 +546,45 @@
         height: 100vh;
         border: 1px solid black;
     }
+
+    .popUp_grid_item{
+      height: 70vh;
+      width: 60vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+    }
+    #koczka_kep{
+      position: fixed;
+      left: 12vw;
+    }
+    #popUp_title{
+      background-color: rgb(219, 157, 216);
+      font-size: 3rem;
+      margin-top: 3vh;
+      padding-top: 2vh;
+      width: 60vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+    }
+    #popUp_quot{
+      padding-left: 10vw;
+      margin-top: 10vh;
+      font-size: 2rem;
+    }
+    #x_btn{
+      position: fixed;
+      left: 78.8vw;
+      top: 15.5vh;
+      width: 1vw;
+      height: 1vw;
+    }
+    
+
   }
