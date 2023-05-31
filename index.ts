@@ -29,14 +29,17 @@ app.get('/quotation', (req: Request, res: Response) => {
   }
 })
 
+app.get('/gamePage', (req: Request, res: Response) =>{
+})
+
 //listener
 
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });
 
-//Server func
+//Server funclea
 let giveQuot = (num: number) =>{
-  let quot_list = ['A kutya meg a macsek rúgja meg!', 'Okoska most kuss!', 'Nagyszájú barátunk, kuss!', 'Tudják a teknős úgy lélegzik, mint ahogy a relé mükődik', 'Egyszer én magam is olimpikon voltam', 'A klán háborúban új világ érkezett! Végre lesz mivel eltöltsem az időm és a pénzem!', 'Hol vagy Endre??', 'Hoppá! Hoppá! Elfelejtetted levédeni a telnet portod!', 'Képzelje véget ért a Klánháboruban a 69-es világ', 'Ne is tudják milyen csunyán beszél a lányom LOL-ozás közben']
+  let quot_list = ['A kutya meg a macsek rúgja meg!', 'Okoska most kuss!', 'Nagyszájú barátunk, kuss!', 'Tudják a teknős úgy lélegzik, mint ahogy a relé mükődik', 'Egyszer én magam is olimpikon voltam', 'A klán háborúban új világ érkezett! Végre lesz mivel eltöltsem az időm és a pénzem  !', 'Hol vagy Endre??', 'Hoppá! Hoppá! Elfelejtetted levédeni a telnet portod!', 'Képzelje véget ért a Klánháboruban a 69-es világ', 'Ne is tudják milyen csunyán beszél a lányom LOL-ozás közben']
   return quot_list[num]
 }
