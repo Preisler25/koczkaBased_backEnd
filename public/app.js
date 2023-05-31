@@ -22,7 +22,7 @@ let quotationTime = () => {
 
 let genRandom = () =>{
     let random = Math.floor(Math.random()*10);
-    return `https://koczkabased.lol/quotation?d=${random}`
+    return `http://localhost:3000/quotation?d=${random}`
 }
 
 let delPopUp = () =>{
