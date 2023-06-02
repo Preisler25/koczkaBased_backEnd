@@ -21,7 +21,7 @@ let quotationTime = () => {
 }
 
 let genRandom = () =>{
-    let random = Math.floor(Math.random()*10);
+    let random = Math.floor(Math.random()*11);
     return `http://localhost/quotation?d=${random}`
     //return `https://koczkabased.lol/quotation?d=${random}`
 }
