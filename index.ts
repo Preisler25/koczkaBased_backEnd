@@ -3,10 +3,18 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+const cors = require('cors');
 const path = require('path')
 const app: Express = express();
 const port = process.env.PORT;
 
+const corsOptions = {
+  origin: 'http://localhost:3000', // Helyi eredet címe, ahonnan engedélyezed a kéréseket
+  methods: ['GET', 'POST'], // Engedélyezett HTTP metódusok
+  allowedHeaders: ['Content-Type', 'Authorization'], // Engedélyezett fejlécek
+};
+
+app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(express.urlencoded({ extended: false }));
 

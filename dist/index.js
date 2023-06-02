@@ -6,9 +6,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
+const cors = require('cors');
 const path = require('path');
 const app = (0, express_1.default)();
 const port = process.env.PORT;
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization'], // Engedélyezett fejlécek
+};
+app.use(cors(corsOptions));
 app.use(express_1.default.static(path.join(__dirname, '..', 'public')));
 app.use(express_1.default.urlencoded({ extended: false }));
 //req handeling
