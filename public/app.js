@@ -1,21 +1,17 @@
 let quotationTime = () => {
-    let url = genRandom();
-    fetch(url)
+  let url = genRandom();
+  fetch(url)
     .then(response => {
       if (!response.ok) {
         throw new Error('Hiba a válaszban: ' + response.status);
       }
-      return response.json();
+      return response.json(); // Itt a .json() metódus már feldolgozza a JSON adatot
     })
     .then(data => {
-      let json_txt = JSON.parse(data)
-      // Itt kezelheted a kapott adatokat
-      genPopUp(json_txt.today)
-      // Például:
-      // processResponse(data);
+      // data már JavaScript objektum lesz
+      genPopUp(data.today);
     })
     .catch(error => {
-      // Itt kezeled az esetleges hibákat
       console.error('Hiba a kérés során:', error);
     });
 }
